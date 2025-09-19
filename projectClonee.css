@@ -1,0 +1,352 @@
+/* -------------------- GLOBAL -------------------- */
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  margin: 0;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+
+/* -------------------- LAYOUT -------------------- */
+.main {
+  display: flex;
+  height: 100vh;
+  padding: 0.5rem;
+}
+
+.maincontent {
+  background-color: #121212;
+  flex: 1;
+  border-radius: 1rem;
+  overflow: auto;
+  padding: 0 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* -------------------- SIDEBAR -------------------- */
+.sidebar {
+  background-color: black;
+  width: 21.25rem; /* 340px */
+  border-radius: 1rem;
+  margin-right: 0.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* -------------------- NAV -------------------- */
+.nav {
+  background-color: #121212;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 6.5rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.navopt {
+  line-height: 2.5rem;
+  opacity: 0.6;
+  margin-left: 1rem;
+}
+
+.navopt i {
+  font-size: 1.25rem;
+}
+
+.navopt a {
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.navopt:hover {
+  opacity: 1;
+}
+
+/* -------------------- LIBRARY -------------------- */
+.library {
+  background-color: #121212;
+  border-radius: 1rem;
+  height: 100%;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.libopt img {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.icons {
+  font-size: 1.25rem;
+  display: flex;
+}
+
+.icons i {
+  opacity: 0.7;
+  margin-right: 1rem;
+}
+
+.icons i:hover {
+  opacity: 1;
+}
+
+.box {
+  background-color: #232323;
+  height: 7rem;
+  border-radius: 0.8rem;
+  margin: 0.8rem 0.5rem 1.5rem;
+  padding: 1rem 1.25rem;
+}
+
+.boxp1 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.boxp2 {
+  font-size: 0.85rem;
+  opacity: 0.9;
+  margin-top: 1rem;
+}
+
+.badge {
+  background-color: white;
+  border: none;
+  border-radius: 1.5rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  padding: 0.25rem 1rem;
+  height: 2rem;
+  width: fit-content;
+}
+
+/* -------------------- STICKY NAV -------------------- */
+.sticknav {
+  position: sticky;
+  top: 0;
+  background-color: #121212;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  z-index: 10;
+}
+
+.sticknavicon {
+  margin-left: 0.75rem;
+}
+
+.download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.down1 {
+  margin-right: 1rem;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+}
+
+/* -------------------- CARDS -------------------- */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #232323;
+  width: 9.375rem; /* 150px */
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1.5rem;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.card-title {
+  font-weight: 800;
+}
+
+.card-info {
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+/* -------------------- FOOTER -------------------- */
+.footer {
+  height: 18.75rem; /* 300px */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  height: 90%;
+  width: 96%;
+  border-top: 0.0625rem solid white;
+  opacity: 0.5;
+}
+
+/* -------------------- MUSIC PLAYER -------------------- */
+.musicplayer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4.5rem; /* 72px */
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  z-index: 1000;
+}
+
+.music-info {
+  width: 30%;
+  display: flex;
+}
+
+.song {
+  font-size: 0.7rem;
+}
+
+.singer {
+  font-size: 0.5rem;
+  opacity: 0.8;
+}
+
+.albump1 {
+  padding: 0.5rem;
+}
+
+.names {
+  padding: 0.4rem 0;
+}
+
+.like {
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.like .l {
+  height: 1.3rem;
+  margin-top: 0.3rem;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.controller {
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+
+.cicon {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.cicon img {
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+}
+
+.cicon input[type="range"] {
+  width: 6.25rem; /* 100px */
+}
+
+.playicon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.playicon img {
+  height: 1rem;
+  width: 1rem;
+  cursor: pointer;
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  justify-content: center;
+}
+
+/* -------------------- HAMBURGER -------------------- */
+.hamburger {
+  display: none; /* hidden on desktop */
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1001;
+}
+
+/* -------------------- RESPONSIVE -------------------- */
+@media (max-width: 768px) {
+  /* Sidebar hidden off-screen */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    width: 16rem;
+    z-index: 999;
+    border-radius: 0;
+  }
+
+  /* Sidebar slides back in */
+  .sidebar.active {
+    left: 0;
+  }
+
+  /* Hamburger shows */
+  .hamburger {
+    display: block;
+  }
+
+  /* Main content full width */
+  .maincontent {
+    margin-left: 0;
+    width: 100%;
+  }
+}
